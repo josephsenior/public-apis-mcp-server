@@ -1,0 +1,27 @@
+{
+  "name": "mcp-public-apis",
+  "version": "1.0.0",
+  "description": "MCP server for the public-apis repository — find, test, and integrate any free API",
+  "type": "module",
+  "bin": {
+    "mcp-public-apis": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "prepare": "npm run build"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "axios": "^1.6.0",
+    "fuse.js": "^7.0.0",
+    "node-cache": "^5.1.2",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "@types/node": "^20.0.0"
+  }
+}
